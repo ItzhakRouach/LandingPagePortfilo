@@ -2,15 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .section-1 {
@@ -61,7 +59,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 2em;
   gap: 10px;
 }
 
@@ -94,7 +92,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding: 1em;
 }
 
 .title {
@@ -132,13 +130,62 @@ img {
 }
 
 .section-3 > p {
+  flex: auto;
   font-size: 28px;
+  color: #505358;
   font-style: italic;
   font-weight: lighter;
 }
+
+.section-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+  background-color: #3882f6;
+  border-radius: 20px;
+  border: none;
+}
+
+.newsletter-intro {
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.news-title {
+  font-size: 20px;
+}
+
+.news-p {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+.sign-up-btn > button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 15px;
+  border: 2px solid #e5e7eb;
+  color: #e5e7eb;
+  background-color: #3882f6;
+}
+
 .footer {
   flex: 1;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  padding: 2em;
 }
