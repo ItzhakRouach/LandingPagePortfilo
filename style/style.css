@@ -19,14 +19,14 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: nowrap;
-  flex-shrink: 0;
 }
 
 .logo {
-  flex: 2 0 0;
-  margin-left: 300px;
-  padding: 10px;
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
 }
 
 .logo > h2 {
@@ -35,11 +35,11 @@ body {
 }
 
 .icons {
-  flex: auto;
+  flex: 1;
   display: flex;
   gap: 25px;
-  padding: 10px;
-  margin-left: 125px;
+  padding: 2rem;
+  justify-content: center;
 }
 
 .hero {
@@ -83,7 +83,7 @@ img {
   border: none;
   font-size: 16px;
   color: #e5e7eb;
-  padding: 10px 16px;
+  padding: 20px 30px;
   background-color: #3882f6;
   border-radius: 10px;
 }
@@ -93,32 +93,36 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em;
+  padding: 2rem;
 }
 
 .title {
   font-size: 36px;
-  font-weight: 900;
+  font-weight: 700;
   color: #1f2937;
+  font-style: italic;
 }
 
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 220px;
-  padding: 40px;
+  gap: 3.5rem;
+  padding: 5rem;
 }
 
 .ft {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
+  padding: 1rem;
 }
 
 .ft > p {
   font-size: 18px;
-  color: #1b1d206e;
+  color: #383b3e;
+  font-style: italic;
+  text-align: center;
 }
 
 .section-3 {
@@ -195,19 +199,22 @@ img {
 @media (max-width: 768px) {
   /* navbar */
   .navbar {
-    flex-direction: column;
-    gap: 15px;
-    padding-bottom: 20px;
+    flex-direction: row;
+    padding-bottom: 2rem;
   }
 
   .logo {
     margin-left: 0;
+    flex: 1;
+    text-align: center;
   }
 
   .icons {
     margin-left: 0;
     justify-content: center;
     width: 100%;
+    flex: 1;
+    text-align: center;
   }
 
   /* Hero */
@@ -222,10 +229,22 @@ img {
     font-size: 16px;
   }
 
+  .logo-img {
+    order: -1;
+    padding: 1rem;
+  }
+
   /* Features */
   .features {
     flex-direction: column;
     gap: 40px;
+  }
+
+  .ft {
+    flex-direction: row;
+    padding: 1rem;
+    gap: 2rem;
+    align-items: center;
   }
 
   .title {
